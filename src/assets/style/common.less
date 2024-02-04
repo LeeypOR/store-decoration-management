@@ -1,0 +1,255 @@
+// margin: 10px
+.m-10 {
+  margin: 10px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-r-10 {
+  margin-right: 10px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+// margin: 20px
+.m-20 {
+  margin: 20px;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.m-r-20 {
+  margin-right: 20px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-l-20 {
+  margin-left: 20px;
+}
+
+// margin: 30px
+.m-30 {
+  margin: 30px;
+}
+
+.m-t-30 {
+  margin-top: 30px;
+}
+
+.m-r-30 {
+  margin-right: 30px;
+}
+
+.m-b-30 {
+  margin-bottom: 30px;
+}
+
+.m-l-30 {
+  margin-left: 30px;
+}
+
+// padding: 10px
+.p-10 {
+  padding: 10px;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-r-10 {
+  padding-right: 10px;
+}
+
+.p-b-10 {
+  padding-bottom: 10px;
+}
+
+.p-l-10 {
+  padding-left: 10px;
+}
+
+// padding: 20px
+
+.p-20 {
+  padding: 10px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.p-r-20 {
+  padding-right: 20px;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.p-l-20 {
+  padding-left: 20px;
+}
+
+// flex 布局
+.flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flex-v-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.product_td{
+  display: flex;
+  align-items: center;
+  .product_name{
+    margin-left:6px;
+  }
+}
+
+// 表单区域标题
+.form-title{
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+// 表单文字提示
+.form-tips{
+  font-size: 12px;
+  color: #999;
+  line-height: 1.5;
+  &.inline{
+    display: inline;
+  }
+  &.red{
+    font-size: 14px;
+    color: red;
+  }
+}
+// vue-ueditor 样式
+.vue-ueditor{
+  width: 100%;
+}
+// 表单删除新增项
+.form-delete-button{
+  position: absolute;
+  right:-20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+// 表单中同一行有多个组建时的间隔
+.form-components-center{
+  padding: 0 10px;
+}
+// 表单中的表格样式
+.form-table{
+  border: 1px solid #E6E6E6;
+  background: #fff;
+  thead{
+    tr{
+      th{
+        border: 1px solid #E6E6E6;
+        white-space: nowrap;
+        text-align: center;
+        background:#F5F5F5;
+      }
+    }
+  }
+  tbody{
+    tr:last-child{
+      text-align: center;
+    }
+    tr{
+      th,td{
+        border: 1px solid #E6E6E6;
+        //padding:4px 10px;
+        line-height: 1.5;
+        position: relative;
+        text-align: center;
+        .dynamic-delete-button{
+          position: absolute;
+          right:-0.3rem;
+          top:15px;
+          cursor: pointer;
+        }
+        input[type=text],
+        input[type=number]{
+          border:none;
+          outline:none;
+          box-sizing: border-box;
+          height:40px;
+        }
+        input[type=number]{
+          line-height: 1;
+        }
+      }
+      th{
+        input[type=text]{
+          text-align: center;
+        }
+      }
+      td{
+        input[type=text],
+        input[type=number]{
+          // min-width:80px;
+          // width:100%;
+          width:100px;
+        }
+        .row{
+          line-height: 0.6rem;
+          border-bottom: 1px solid #E6E6E6;
+          &:last-child{
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+  tfoot{
+    td{
+      background:#F5F5F5;
+      text-align: center;
+      a{
+        font-size:12px;
+      }
+    }
+  }
+}
+.color_red{
+  color:red;
+}
+.form-table{
+  /deep/ .ant-upload.ant-upload-select-picture-card{
+      margin-bottom: 0;
+      margin-right: 0;
+  }
+  /deep/ .ant-upload-picture-card-wrapper{
+      display: block;
+  }
+}
